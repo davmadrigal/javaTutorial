@@ -2,8 +2,7 @@ package internal.main;
 
 import internal.main.rotate.MyArraysExamples;
 
-public class MainApp {
-	
+public class MainApp {	
 	
 	private static MyArraysExamples myArrayExamples;
 	
@@ -14,7 +13,9 @@ public class MainApp {
 		// rotate array length n and 
 		myArrayExamples = new MyArraysExamples();
 		
-		myArrayExamples.rotateArray(numbers,3);
+		//myArrayExamples.rotateArray(numbers,3);
+		
+		myArrayExamples.rotateArray2(numbers,2);
 		
 	}
 

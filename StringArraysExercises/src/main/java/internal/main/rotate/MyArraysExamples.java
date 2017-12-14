@@ -27,15 +27,40 @@ public class MyArraysExamples {
 		
 	}
 	
-//	public void rotateArray2(Integer [] nums, int pos) {
-//		if (nums == null || pos<0) {
-//			throw new IllegalArgumentException("Illegall Argument");
-//		}
-//		
-//		for (int i=0; i<pos; i++){
-//			for (int j=)
-//		}
-//	}
+	// reversal two strings
+	public void rotateArray2(Integer [] nums, int pos) {
+		if (nums == null || nums.length==0 || pos<0) {
+			throw new IllegalArgumentException("Illegall Argument");
+		}
+		
+		if (pos > nums.length) {
+			pos = pos%nums.length;
+		}
+		
+		int a = nums.length - pos;
+		
+		reverse(nums,0,a-1);
+		reverse(nums,a,nums.length-1);
+		reverse(nums,0,nums.length-1);
+		
+		
+	}
+
+	private void reverse(Integer[] nums, int left, int right) {
+		
+		int temp;
+		
+			while (left<right) {
+				temp = nums[left];
+				nums[left] = nums[right];
+				nums[right] = temp;
+				left++;
+				right--;
+			}
+			
+		System.out.println(Arrays.toString(nums));
+		
+	}
 
 
 }
