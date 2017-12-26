@@ -3,25 +3,25 @@ package internal.main.fibonacci;
 public class Fibonacci {
 	
 	// return the number of position n
-	public int fibo(int n) {
-		
-		if (n == 0) {
-			return 0;
-		} else if (n ==1) {
-			return 1;
-		} else {
-			
-			return fibo(n-1) + fibo(n-2);
-		}
-		
-	}
+//	public int fibo(int n) {
+//		
+//		if (n == 0) {
+//			return 0;
+//		} else if (n ==1) {
+//			return 1;
+//		} else {
+//			
+//			return fibo(n-1) + fibo(n-2);
+//		}
+//		
+//	}
 
-}
+//}
 
-/*
- * no recursivo
- * 
- *  double fibbonaci(int n){
+
+ // no recursivo
+  
+   public double fibbonaci(int n){
     double prev=0d, next=1d, result=0d;
     for (int i = 0; i < n; i++) {
         result=prev+next;
@@ -30,6 +30,9 @@ public class Fibonacci {
     }
     return result;
 }
+}
+
+/*
 ----------------------------------
 type it out
 
